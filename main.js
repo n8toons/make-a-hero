@@ -1,4 +1,4 @@
-var canvas = new fabric.canvas(myCanvas);
+var canvas = new fabric.Canvas('myCanvas');
 block_image_width=30;
 block_image_height=30;
 player_x=10;
@@ -17,3 +17,4 @@ function player_update(){//function to draw player
              block_image_object.scaleToHeight(block_image_height);
               block_image_object.set({ top:player_y, left:player_x });
                canvas.add(block_image_object); });}
+player_update();
